@@ -5,13 +5,13 @@ export const styles = StyleSheet.create({
     flex: 1, 
     justifyContent: 'center', 
     padding: 20, 
-    backgroundColor: '#f2f2f2' 
+    backgroundColor: 'lightgray' 
   },
 
   logo: { 
     fontSize: 28, 
     fontWeight: 'bold', 
-    color: '#E60023', 
+    color: 'red', 
     textAlign: 'center', 
     marginBottom: 10 
   },

@@ -3,12 +3,12 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor:' #fff', 
+    backgroundColor:' white', 
     padding: 10 
   },
 
   searchBar: { 
-    backgroundColor: '#eee', 
+    backgroundColor: 'whitesmoke', 
     borderRadius: 20, 
     padding: 10, 
     marginBottom: 10 
@@ -30,12 +30,12 @@ export const styles = StyleSheet.create({
   category: { 
     fontSize: 16, 
     fontWeight: 'bold', 
-    color: 'dark-gray' 
+    color: 'darkgray' 
   },
 
   card: { 
     flex: 1, 
-    backgroundColor: '#f9f9f9', 
+    backgroundColor: 'whitesmoke', 
     margin: 5, 
     borderRadius: 8, 
     overflow: 'hidden' 
@@ -57,7 +57,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-around', 
     padding: 10, 
     borderTopWidth: 1,
-    borderColor: '#ddd' 
+    borderColor: 'lightgray' 
   },
 
   navItem: { 

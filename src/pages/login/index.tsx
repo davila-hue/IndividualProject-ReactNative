@@ -17,24 +17,24 @@ export const Login = ({ navigation }: Props) => {
       <Text style={styles.title}>Bem-vindo(a) ao Pinterest</Text>
 
       <Input 
-      placeholder="Endereço de e-mail" 
+      placeholder= "Digite seu e-mail" 
       value={email} 
       onChangeText={setEmail}
       />
 
       <CustomButton 
-      title="Continuar" 
-      color="#E60023" 
+      title= "Continuar" 
+      color= "red" 
       onPress={() => navigation.navigate('Home', { username: email })}
       />
       <CustomButton 
-      title="Continuar com Facebook" 
-      color="#1877F2" 
+      title= "Continuar com Facebook" 
+      color= "blue" 
       onPress={() => navigation.navigate('Home', { username: 'Facebook User' })}
       />
       <CustomButton 
-      title="Continuar com Google" 
-      color="#fff" 
+      title= "Continuar com Google" 
+      color= "black" 
       onPress={() => navigation.navigate('Home', { username: 'Google User' })}
       />
     </View>
