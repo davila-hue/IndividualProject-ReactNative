@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { View, FlatList, Text, TextInput, Image } from 'react-native';
+import { View, FlatList, Text, TextInput } from 'react-native';
 import { styles } from './style';
 import { Pins } from '../../data';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../routers/type';
+import { CardTask } from '../../components/CardTask';
 
 interface Pin {
   id: number;
@@ -35,10 +36,7 @@ export const Home = ({ route }: Props) => {
         keyExtractor={item => String(item.id)}
         numColumns={2}
         renderItem={({ item }) => (
-          <View style={styles.card}>
-            <Image source={item.image} style={styles.cardImage} />
-            <Text style={styles.cardTitle}>{item.title}</Text>
-          </View>
+          <CardTask title={item.title} image={item.image} />
         )}
       />
 
@@ -50,4 +48,4 @@ export const Home = ({ route }: Props) => {
       </View>
     </View>
   );
-}
+};
