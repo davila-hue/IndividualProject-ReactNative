@@ -1,18 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login } from './src/pages/login';
-import { Home } from './src/pages/home';
-
-const Stack = createNativeStackNavigator();
+import { Routers } from './src/routers';
 
 const App = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="Login">
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="Home" component={Home} />
-    </Stack.Navigator>
+    <Routers />
   </NavigationContainer>
 );
 
-export default App;
+
