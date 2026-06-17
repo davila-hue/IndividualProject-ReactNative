@@ -1,12 +1,15 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Login } from '../pages/login';
 import { Home } from '../pages/home';
+import { RootStackParamList } from './type';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
-export const StackRouters = () => (
-  <Stack.Navigator initialRouteName="Login">
-    <Stack.Screen name="Login" component={Login} />
-    <Stack.Screen name="Home" component={Home} />
-  </Stack.Navigator>
-);
+export const StackRouters = () => {
+  return (
+    <Stack.Navigator initialRouteName="Login">
+      <Stack.Screen name="Login" component={Login} options={{ headerShown:false }}/>
+      <Stack.Screen name="Home" component={Home} options={{ headerShown:false }}/>
+    </Stack.Navigator>
+  );
+}
